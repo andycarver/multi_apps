@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Courses and Users</title>
+</head>
+<body>
+  <h1>Add User to Course</h1>
+
+  <table>
+      <tr>
+          <th>Course</th>
+          <th>Title</th>
+          <th>Number of Users</th>
+      </tr>
+      {% for Course in Courses %}
+      <tr>
+          <td>{{ Course.course_name }} </td>
+          <td>{{ Course.description }}</td>
+          <td>{{ Course. }}</td>
+      </tr>
+      {% endfor %}
+</body>
+</html>
