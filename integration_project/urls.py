@@ -18,6 +18,6 @@ from django.conf.urls import url, include
 
 urlpatterns = [
     url(r'^', include('apps.multi_apps.urls')),
-    url(r'^courses/', include('apps.course_bot.urls')),
-    url(r'^adduser/', include('apps.login_registration.urls'))
+    url(r'^courses/', include('apps.course_bot.urls', namespace = 'courses')),
+    url(r'^adduser/', include('apps.login_registration.urls', namespace = 'users'))
 ]
